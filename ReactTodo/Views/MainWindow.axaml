@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:vm="using:ReactTodo.ViewModels"
+		xmlns:gif="clr-namespace:AvaloniaGif;assembly=AvaloniaGif"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ReactTodo.Views.MainWindow" Width="{Binding WIDTH}" MinWidth="{Binding WIDTH}" Height="{Binding HEIGHT}" MinHeight="{Binding HEIGHT}" MaxWidth="{Binding WIDTH}" MaxHeight="{Binding HEIGHT}"
+        Icon="/Assets/spook-valon.ico"
+        Title="Spook-valon">
+	<!--xmlns:vm="using:ReactTodo.ViewModels"-->
+	<!--xmlns:gif="clr-namespace:AvaloniaGif;assembly=AvaloniaGif"-->
+	<!--
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	-->
+
+	<Grid>
+		<Grid RowDefinitions="*,*,*,*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,160" ShowGridLines="True">
+			<!--
+			<TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
+            <Image Grid.Row="{Binding Y}" Grid.Column="{Binding X}" Name="al" Source="/Assets/al.png"/>
+			<Image Grid.Row="{Binding Y2}" Grid.Column="{Binding X2}" Name="ob" Source="/Assets/ob.png"/>
+			<Image Grid.Row="{Binding Y3}" Grid.Column="{Binding X3}" Name="so" Source="/Assets/so.png"/>
+
+			<TextBlock Grid.Row="1" Grid.Column="10" HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding TestText}"></TextBlock>
+			
+			<!--<gif:GifImage Source="/Assets/earth.gif" />-->
+		</Grid>
+	</Grid>
+	<Window.Background>
+		<!--<ImageBrush Source="/Assets/bg.png"/>-->
+	</Window.Background>
+</Window>
