@@ -1,3 +1,3 @@
 # ReactTodo
 
-An app built for the purpose of learning, understanding Avalonia
+An app built for the purpose of learning, understanding Avalonia and ReactiveUI
