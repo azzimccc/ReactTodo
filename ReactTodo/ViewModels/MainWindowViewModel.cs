@@ -44,13 +44,6 @@ namespace ReactTodo.ViewModels
         [Reactive] public int Y3 { set; get; }
 
         //public string AlImage = "avares://ReactTodo/Assets/al.png";
-        /*
-        public Bitmap ImageMap
-        {
-            get;
-            private set;
-        }
-        //*/
 
         //public Models.Box al;
         public MainWindowViewModel()
@@ -84,14 +77,6 @@ namespace ReactTodo.ViewModels
             this.X2 = 6;
             this.Y2 = 6;
             this.UpdateSouMovement();
-            //this.al = new Models.Box(_X: 2, _Y: 2);
-            //this.X[(int)ObjectCode.Al] = 2;
-            //this.Y[(int)ObjectCode.Al] = 0;
-
-            //this.X[(int)ObjectCode.Obs] = 2;
-            //this.Y[(int)ObjectCode.Obs] = 2;
-            //this.X2 = 0;
-            //this.Y2 = 0;
         }
 
         private void Update()
@@ -107,57 +92,7 @@ namespace ReactTodo.ViewModels
                 }
             }
         }
-        /*
-        private void UpdateAlMovement()
-        {
-            if (Models.Keyboard.Keys.Contains(Key.I))
-            {
-                //Y--;
-                this.Y[(int)ObjectCode.Al] = CheckOutOfBoundMove(this.Y[(int)ObjectCode.Al] - 1);
-                this.TestText = "Y :" + this.Y[(int)ObjectCode.Al] + "";
-
-            }
-            else if (Models.Keyboard.Keys.Contains(Key.L))
-            {
-                //X++;
-                this.X[(int)ObjectCode.Al] = CheckOutOfBoundMove(this.X[(int)ObjectCode.Al] + 1);
-                this.TestText = "X :" + this.X[(int)ObjectCode.Al];
-            }
-            else if (Models.Keyboard.Keys.Contains(Key.J))
-            {
-                //X--;
-                this.X[(int)ObjectCode.Al] = CheckOutOfBoundMove(this.X[(int)ObjectCode.Al] - 1);
-                this.TestText = "X :" + this.X[(int)ObjectCode.Al] + "";
-            }
-            else if (Models.Keyboard.Keys.Contains(Key.K))
-            {
-                //Y++;
-                this.Y[(int)ObjectCode.Al] = CheckOutOfBoundMove(this.Y[(int)ObjectCode.Al] + 1);
-                this.TestText = "Y :" + this.Y[(int)ObjectCode.Al] + "";
-            }
-        }
-        private void UpdateObsMovement()
-        {
-            if (this.Y[(int)ObjectCode.Al] < this.Y[(int)ObjectCode.Obs])
-            {
-                this.Y[(int)ObjectCode.Obs] = CheckOutOfBoundMove(this.Y[(int)ObjectCode.Obs] - 1);
-            }
-            else if (this.X[(int)ObjectCode.Al] > this.X[(int)ObjectCode.Obs])
-            {
-                this.X[(int)ObjectCode.Obs] = CheckOutOfBoundMove(this.X[(int)ObjectCode.Obs] + 1);
-            }
-            else if (this.X[(int)ObjectCode.Al] < this.X[(int)ObjectCode.Obs])
-            {
-                this.X[(int)ObjectCode.Obs] = CheckOutOfBoundMove(this.X[(int)ObjectCode.Obs] - 1);
-            }
-            else if (this.Y[(int)ObjectCode.Al] > this.Y[(int)ObjectCode.Obs])
-            {
-                this.Y[(int)ObjectCode.Obs] = CheckOutOfBoundMove(this.Y[(int)ObjectCode.Obs] + 1);
-            }
-        }
-        //*/
-
-        ///*
+        
         private void UpdateAlMovement()
         {
             if (Models.Keyboard.Keys.Contains(Key.I))
